@@ -6,14 +6,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css">
     <link rel="stylesheet" href="index.css">
     <script defer src="render.js"></script>
+    
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+    </style>
   </head>
   <body>
-    <h1>💖 Electron Screen Recorder!</h1>
-    <video></video>
-
-    <button id="startButton" class="button is-primary">Start</button>
-    <button id="stopButton" class="button is-warning">Stop</button>
-
+    <h1 class="title is-2">Electron Screen Recorder</h1>
+    <div class="container">
+      <video height="600"></video>
+      <button id="startButton" class="button is-primary">Start</button>
+      <button id="stopButton" class="button is-warning">Stop</button>
+    </div>
     <hr />
 
     <button id="videoSelectButton" class="button is-text">Video Source</button>
